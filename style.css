@@ -22,6 +22,13 @@ body{
     font-size: 8px;
     margin-left: 307px;
 }
+.twitter{
+    position: absolute;
+    width: 95px;
+    height: 25px;
+    margin-top: 23px;
+    margin-left: 255px;
+}
 .twitter_url{
     position: absolute;
     color: #4a4a4a;
@@ -30,13 +37,7 @@ body{
     margin-left: 268px;
     text-decoration: none;
 }
-.twitter{
-    position: absolute;
-    width: 95px;
-    height: 25px;
-    margin-top: 23px;
-    margin-left: 255px;
-}
+
 .qrcode_twitter{
     position: absolute;
     width: 70px;
@@ -104,6 +105,12 @@ body{
 }
 .annai{
     margin-top: 20px;
+}
+.profile{
+    background: linear-gradient(transparent 75%, rgba(0, 255, 242, 0.301) 15%);
+    width: 110px;
+    color: #4a4a4a;
+    font-size: 20px;
 }
 .div1{
     position: relative;
@@ -240,21 +247,44 @@ body{
     font-size: 16px;
     color: #4a4a4a;
     text-align: center;
-    top: -135px;
+    top: -335px;
 }
 .Revision1{
     position: relative;
     font-size: 16px;
     color: #4a4a4a;
     text-align: center;
-    top: -109px;
+    top: -339px;
+}
+.Revision2{
+    position: relative;
+    font-size: 16px;
+    color: #4a4a4a;
+    text-align: center;
+    top: -343px;
+}
+.Revision3{
+    position: relative;
+    font-size: 16px;
+    color: #4a4a4a;
+    text-align: center;
+    top: -345px;
+}
+.Revision4{
+    position: relative;
+    font-size: 16px;
+    color: #4a4a4a;
+    text-align: center;
+    top: -348px;
 }
 .div8{
     position: relative;
-    margin-top: 50px;
+    margin-top: -216px;
     color: #4a4a4a;
 }
 .please{
+    font-size: 12px;
+    text-align: center;
     font-size: 19px;
     margin-top: 0px;
     margin-left: 0px;
@@ -262,12 +292,12 @@ body{
     width: 180px;
 }
 .div9{
-    font-size: 13px;
+    font-size: 12px;
     text-align: center;
 }
-.please2{
-    background: linear-gradient(transparent 50%, rgba(255, 8, 0, 0.233) 15%);
-    width: 365px;
+.please1{
+    margin-left: -72px;
+    color: #4a4a4a;
 }
 .ik{
     position: relative;
@@ -276,3 +306,93 @@ body{
     color: #4a4a4a;
     margin-bottom: 50px;
 }
+.hina_hikawa_bg{
+    position: absolute;
+    margin-left: 7px;
+    width: 182px;
+    margin-top: -186px;
+    
+}
+img.hina_hikawa_bg {
+    z-index: -10;
+
+}
+.mokomoko{
+    position: absolute;
+    left: -33px;
+    margin-top: -156px;
+    width: 354px;
+    z-index: -5;
+    height: 177px;
+
+}
+/*------------------------------------login------------------------------------*/
+
+  
+  .login_form_top {
+    width: 325px;
+    padding: 40px 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #000;
+    text-align: center;
+  }
+  
+  .pass1 {
+    color: white;
+    font-weight: 420;
+  }
+  
+  .p {
+    font-size: 10px;
+  }
+  
+  .password {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #ff69b4;
+    padding: 15px 10px;
+    width: 180px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+    text-align: center;
+  }
+  
+  .password {
+    width: 180px;
+    background-color: #f0f8ff;
+  }
+  
+  .login[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #f0f8ff;
+    padding: 15px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    transition: 0.25s;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .login[type = "submit"]:hover {
+    background-color: #ff69b4;
+    border: 2px solid #ff69b4;
+  }
+  .span1{
+    color: #f62156;
+  }
+  .title1{
+    color: #c6fff8;
+    font-size: 25px;
+  }
+  /*------------------------------------login------------------------------------*/
