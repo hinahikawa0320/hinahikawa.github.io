@@ -1,355 +1,36 @@
 @charset "UTF-8";
-
-body{
-    overflow-x: hidden;
-    background-image: url(img/haikei.png);
-    background-color:rgb(241, 241, 199);
-    
-
-
-}
-.top1{
-    top: 15px;
-    position: absolute;
-    color: #4a4a4a;
-    font-size: 8px;
-    margin-left: 220px;
-}
-.top2{
-    top: 0px;
-    position: absolute;
-    color: #4a4a4a;
-    font-size: 8px;
-    margin-left: 307px;
-}
-.twitter{
-    position: absolute;
-    width: 95px;
-    height: 25px;
-    margin-top: 23px;
-    margin-left: 255px;
-}
-.twitter_url{
-    position: absolute;
-    color: #4a4a4a;
-    font-size: 15px;
-    margin-top: 24px;
-    margin-left: 268px;
-    text-decoration: none;
-}
-
-.qrcode_twitter{
-    position: absolute;
-    width: 70px;
-    margin-top: -4px;
-    margin-left: 10px;
-}
-.QRcode{
-    position: absolute;
-    color: #4a4a4a;
-    font-size: 6px;
-    margin-top: 65px;
-    margin-left: 10px;
-
-}
-.kanban{
-    position: absolute;
-    width: 360px;
-    height: 400px;
-    top: 120px;
-}
-.top{
-    position: relative;
-    font-size: 21px;
-    color: #4a4a4a;
-    top: 115px;
-    left: 20px;
-    background: linear-gradient(transparent 75%, rgba(0, 255, 242, 0.301) 15%);
-    width: 225px;
-    
-}
-.hinasblog{
-    position: relative;
-    font-size: 11px;
-    color: #4a4a4a;
-    top: 100px;
-    text-align: center;
-    line-height: 22px;
-}
-.sibahu{
-    position: relative;
-    margin-top: 212px;
-    width: 367px;
-    height: 80px;
-    margin-left: -1px;
-}
-.hinapic{
-    position: relative;
-    height: 200px;
-    top: -140px;
-    left: -30px;
-}
-.watasi{
-    position: relative;
-    top: 0px;
-    color: #4a4a4a;
-    font-size: 18px;
-    margin-left: 141px;
-}
-.hukidasi1{
-    position: relative;
-    width: 260px;
-    top: 65px ;
-    left: 90px;
-
-}
-.annai{
-    margin-top: 20px;
-}
-.profile{
-    background: linear-gradient(transparent 75%, rgba(0, 255, 242, 0.301) 15%);
-    width: 110px;
-    color: #4a4a4a;
-    font-size: 20px;
-}
-.div1{
-    position: relative;
-}
-.kakko-b1{
-    position: absolute;
-    width: 100px;
-    margin-left: 19px;
-    margin-top: 0px;
-    transform: rotate( -90deg );
-}
-.kakko-g1{
-    position: absolute;
-    width: 120px;
-    margin-left: 248px;
-    margin-top: -8px;
-    transform: rotate( -90deg );
-}
-.div3{
-    position: relative;
-    margin-top: -220px;
-}
-.hinapic1{
-    position: relative;
-    height: 200px;
-    top: 120px;
-    left: 194px;
-
-}
-.hukidasi2{
-    position: relative;
-    height: 38px;
-    width: 246px;
-    margin-top: 0px;
-    margin-left: 0px;
-
-}
-.prof{
-    position: relative;
-    font-size: 16px;
-    color: #4a4a4a;
-    top: -52px;
-    margin-left: 18px;
-}
-.name{
-    position: relative;
-    font-size: 14px;
-    color: #4a4a4a;
-    text-align: center;
-    margin-top: 92px;
-    margin-left: 16px;
-}
-.div2{
-    position: relative;
-    margin-top: -160px;
-}
-.kakko-b2{
-    position: absolute;
-    width: 100px;
-    margin-left: 249px;
-    margin-top: 150px;
-    transform: rotate( 90deg );
-}
-.kakko-g2{
-    position: absolute;
-    width: 120px;
-    margin-left: 2px;
-    margin-top: 140px;
-    transform: rotate( 90deg );
-}
-.div4{
-    position: relative;
-    margin-top: 170px;
-}
-.hinapic2{
-    position: relative;
-    height: 200px;
-    top: 120px;
-    left: -17px;
-
-}
-.hukidasi3{
-    position: relative;
-    width: 210px;
-    margin-top: 2px;
-    margin-left: 126px;
-
-}
-.nigate{
-    position: relative;
-    font-size: 16px;
-    color: #4a4a4a;
-    margin-top: -40px;
-    margin-left: 170px;
-}
-.div5{
-    position: relative;
-    margin-top: 95px;
-    margin-bottom: 0px;
-}
-.niga{
-    position: relative;
-    font-size: 14px;
-    color: #4a4a4a;
-    text-align: center;
-    margin-top: 180px;
-    margin-left: 16px;
-}
-.div6{
-    position: relative;
-    margin-top: 220px;
-}
-.div7{
-    position: relative;
-    margin-top: 300px;
-}
-.Revisionmatter{
-    position: relative;
-    font-size: 19px;
-    color: #4a4a4a;
-    background: linear-gradient(transparent 75%, rgba(0, 255, 242, 0.301) 15%);
-    width: 180px;
-
-}
-.hukidasi4{
-    position: relative;
-    width: 270px;
-    height: 60px;
-    margin-top: 0px;
-    margin-left: 50px;
-}
-.Revision{
-    position: relative;
-    font-size: 16px;
-    color: #4a4a4a;
-    text-align: center;
-    top: -335px;
-}
-.Revision1{
-    position: relative;
-    font-size: 16px;
-    color: #4a4a4a;
-    text-align: center;
-    top: -339px;
-}
-.Revision2{
-    position: relative;
-    font-size: 16px;
-    color: #4a4a4a;
-    text-align: center;
-    top: -343px;
-}
-.Revision3{
-    position: relative;
-    font-size: 16px;
-    color: #4a4a4a;
-    text-align: center;
-    top: -345px;
-}
-.Revision4{
-    position: relative;
-    font-size: 16px;
-    color: #4a4a4a;
-    text-align: center;
-    top: -348px;
-}
-.div8{
-    position: relative;
-    margin-top: -216px;
-    color: #4a4a4a;
-}
-.please{
-    font-size: 12px;
-    text-align: center;
-    font-size: 19px;
-    margin-top: 0px;
-    margin-left: 0px;
-    background: linear-gradient(transparent 75%, rgba(0, 255, 242, 0.301) 15%);
-    width: 180px;
-}
-.div9{
-    font-size: 12px;
-    text-align: center;
-}
-.please1{
-    margin-left: -72px;
-    color: #4a4a4a;
-}
-.ik{
-    position: relative;
-    text-align: center;
-    font-size: 20px;
-    color: #4a4a4a;
-    margin-bottom: 50px;
-}
-.hina_hikawa_bg{
-    position: absolute;
-    margin-left: 7px;
-    width: 182px;
-    margin-top: -186px;
-    
-}
-img.hina_hikawa_bg {
-    z-index: -10;
-
-}
-.mokomoko{
-    position: absolute;
-    left: -33px;
-    margin-top: -156px;
-    width: 354px;
-    z-index: -5;
-    height: 177px;
-
-}
 /*------------------------------------login------------------------------------*/
 
-  
-  .login_form_top {
+.backhina {
+    position: absolute;
+    height: 468px;
+    left: 50%;
+    top: 39%;
+    transform: translate(-50%, -50%);
+}
+
+.login_form_top {
+
     width: 325px;
     padding: 40px 10px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: #000;
+    transform: translate(-50%, -50%);
+    background-color: #000000bc;
     text-align: center;
-  }
-  
-  .pass1 {
+}
+
+.pass1 {
     color: white;
     font-weight: 420;
-  }
-  
-  .p {
+}
+
+.p {
     font-size: 10px;
-  }
-  
-  .password {
+}
+
+.password {
     border: 0;
     background: none;
     display: block;
@@ -361,14 +42,14 @@ img.hina_hikawa_bg {
     border-radius: 24px;
     transition: 0.25s;
     text-align: center;
-  }
-  
-  .password {
+}
+
+.password {
     width: 180px;
     background-color: #f0f8ff;
-  }
-  
-  .login[type = "submit"]{
+}
+
+.login[type="submit"] {
     border: 0;
     background: none;
     display: block;
@@ -382,17 +63,398 @@ img.hina_hikawa_bg {
     transition: 0.25s;
     text-align: center;
     cursor: pointer;
-  }
-  
-  .login[type = "submit"]:hover {
+}
+
+.login[type="submit"]:hover {
     background-color: #ff69b4;
     border: 2px solid #ff69b4;
-  }
-  .span1{
+}
+
+.span1 {
     color: #f62156;
-  }
-  .title1{
+}
+
+.title1 {
     color: #c6fff8;
     font-size: 25px;
-  }
-  /*------------------------------------login------------------------------------*/
+}
+
+/*------------------------------------login------------------------------------*/
+
+body {
+
+    overflow-x: hidden;
+    background-image: url(img/haikei.png);
+    background-color: rgb(241, 241, 199);
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.update-log {
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    margin-bottom: 100px;
+}
+
+.update-log-ver {
+    position: absolute;
+    left: auto;
+    top: auto;
+    font-size: 10px;
+    color: #4a4a4a;
+}
+
+.twitter-qrcode {
+    position: absolute;
+    left: 80%;
+    top: 2%;
+    width: 70px;
+}
+
+.twitter-qrcode-under {
+    position: absolute;
+    font-size: 8px;
+    left: 81%;
+    top: 65px;
+}
+
+.twitter-url {
+    position: absolute;
+    top: 60px;
+    text-decoration: none;
+    color: #4a4a4a;
+}
+
+.hinas-blog-heading {
+    display: flex;
+    margin-bottom: 300px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    margin-bottom: 400px;
+}
+
+.signboard {
+    position: absolute;
+    width: 350px;
+
+
+}
+
+.title1 {
+    position: absolute;
+    color: #4a4a4a;
+    text-align: center;
+    background: linear-gradient(transparent 85%, rgba(0, 255, 242, 0.301) 15%);
+    top: -5px;
+    left: 20px;
+
+}
+
+.text1 {
+    position: absolute;
+    text-align: center;
+    color: #4a4a4a;
+    font-size: 12px;
+    left: 35px;
+    top: 40px;
+
+}
+
+.hinas-blog-guidance-1 {
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hina1 {
+    position: relative;
+    height: 200px;
+    display: flex;
+    left: -45px;
+    top: -84px;
+}
+
+.speech-bubble1 {
+    position: absolute;
+    width: 80px;
+    display: flex;
+    width: 280px;
+    left: 20%;
+}
+
+.p1 {
+    position: absolute;
+    color: #4a4a4a;
+    z-index: 10px;
+    left: 30%;
+    width: 250px;
+    font-size: 22px;
+    top: -10px;
+}
+
+.hinas-blog-guidance-2 {
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hina2 {
+    position: relative;
+    height: 200px;
+    display: flex;
+    left: 188px;
+    top: -84px;
+    width: 165px;
+}
+
+.speech-bubble2 {
+    position: absolute;
+    width: 80px;
+    display: flex;
+    width: 250px;
+    left: -3%;
+    top: 7px;
+    height: 45px;
+}
+
+.p2 {
+    position: absolute;
+    color: #4a4a4a;
+    z-index: 10px;
+    left: 2%;
+    width: 260px;
+    font-size: 18px;
+    top: 0px;
+}
+
+.profile-title{
+    background: linear-gradient(transparent 75%, rgba(0, 255, 242, 0.301) 15%);
+    width: 110px;
+    color: #4a4a4a;
+    font-size: 20px;
+}
+
+.hinas-blog-profile {
+    position: relative;
+    top: 50px;
+    display: flex;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+}
+
+.p3 {
+    text-align: center;
+    font-size: 15px;
+    color: #4a4a4a;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.kakko-b1 {
+    position: absolute;
+    width: 50px;
+    left: 0px;
+    top: -25px;
+    transform: rotate(-90deg);
+}
+
+.kakko-b3 {
+    position: absolute;
+    width: 50px;
+    left: 300px;
+    top: -25px;
+    transform: rotate(-90deg);
+}
+
+.kakko-b2 {
+    position: absolute;
+    width: 50px;
+    left: 0px;
+    top: 150px;
+    transform: rotate(90deg);
+}
+
+.kakko-b4 {
+    position: absolute;
+    width: 50px;
+    left: 300px;
+    top: 150px;
+    transform: rotate(90deg);
+}
+
+.hinas-blog-profile2 {
+    position: relative;
+    display: flex;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+}
+
+.p4 {
+    text-align: center;
+    font-size: 15px;
+    color: #4a4a4a;
+    margin-left: auto;
+    margin-right: auto;
+    top: 5px;
+}
+
+.hinas-blog-guidance-3 {
+
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hina3 {
+    position: relative;
+    height: 200px;
+    display: flex;
+    left: -45px;
+    top: -84px;
+    width: 165px;
+}
+
+.speech-bubble3 {
+    position: absolute;
+    width: 80px;
+    display: flex;
+    width: 280px;
+    left: 20%;
+}
+
+.p5 {
+    position: absolute;
+    color: #4a4a4a;
+    z-index: 50px;
+    left: 41%;
+    width: 260px;
+    font-size: 18px;
+    top: -4px;
+}
+
+.hinas-blog-profile3 {
+    position: relative;
+    display: flex;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+.p6 {
+    text-align: center;
+    font-size: 15px;
+    color: #4a4a4a;
+    margin-left: auto;
+    margin-right: auto;
+    top: 5px;
+    margin-bottom: 100px;
+}
+.kakko-b5 {
+    position: absolute;
+    width: 50px;
+    left: 0px;
+    top: 285px;
+    transform: rotate(90deg);
+    
+}
+
+.kakko-b6 {
+    position: absolute;
+    width: 50px;
+    left: 300px;
+    top: 285px;
+    transform: rotate(90deg);
+    
+}
+.coming-soon{
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    color: #4a4a4a;
+    margin-bottom: 50px;
+}
+.Revision-matter{
+    background: linear-gradient(transparent 75%, rgba(0, 255, 242, 0.301) 15%);
+    width: 200px;
+    color: #4a4a4a;
+    font-size: 20px;
+}
+.Revision-matter-div{
+    position: relative;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.speech-bubble4{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
+}
+.information{
+    position: absolute;
+    display: flex;
+    font-size: 16px;
+    color: #4a4a4a;
+    z-index: 40;
+    text-align: center;
+    left: 70px;
+    right: auto;
+}
+.please{
+    font-size: 12px;
+    text-align: center;
+    font-size: 19px;
+    margin-top: 50px;
+    margin-left: 0px;
+    background: linear-gradient(transparent 75%, rgba(0, 255, 242, 0.301) 15%);
+    width: 180px;
+}
+.Afterword{
+    position: relative;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cloud{
+    position: absolute;
+    display: flex;
+    width: 354px;
+    height: 177px;
+}
+.hina4{
+    position: absolute;
+    display: flex;
+    height: 182px;
+    right: -15px;
+    top: -10px;
+}
+.caution{
+    position: absolute;
+    color: #4a4a4a;
+    font-size: 11px;
+    text-align: center;
+    top: 30px;
+    left: 40px;
+}
