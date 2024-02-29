@@ -1,460 +1,535 @@
-@charset "UTF-8";
-/*------------------------------------login------------------------------------*/
+@charset "utf-8";
 
-.backhina {
-    position: absolute;
-    height: 468px;
-    left: 50%;
-    top: 39%;
-    transform: translate(-50%, -50%);
-}
-
-.login_form_top {
-
-    width: 325px;
-    padding: 40px 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #000000bc;
-    text-align: center;
-}
-
-.pass1 {
-    color: white;
-    font-weight: 420;
-}
-
-.p {
-    font-size: 10px;
-}
-
-.password {
-    border: 0;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    border: 2px solid #ff69b4;
-    padding: 15px 10px;
-    width: 180px;
-    outline: none;
-    border-radius: 24px;
-    transition: 0.25s;
-    text-align: center;
-}
-
-.password {
-    width: 180px;
-    background-color: #f0f8ff;
-}
-
-.login[type="submit"] {
-    border: 0;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    border: 2px solid #f0f8ff;
-    padding: 15px 10px;
-    width: 200px;
-    outline: none;
-    color: white;
-    border-radius: 25px;
-    transition: 0.25s;
-    text-align: center;
-    cursor: pointer;
-}
-
-.login[type="submit"]:hover {
-    background-color: #ff69b4;
-    border: 2px solid #ff69b4;
-}
-
-.span1 {
-    color: #f62156;
-}
-
-.title1 {
-    color: #c6fff8;
-    font-size: 25px;
-}
-
-/*------------------------------------login------------------------------------*/
-
-body {
-
-    overflow-x: hidden;
-    background-image: url(img/haikei.png);
-    background-color: rgb(241, 241, 199);
-    width: 350px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.update-log {
-    position: relative;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 350px;
-    margin-bottom: 100px;
-}
-
-.update-log-ver {
-    position: absolute;
-    left: auto;
-    top: auto;
-    font-size: 10px;
-    color: #4a4a4a;
-}
-
-.twitter-qrcode {
-    position: absolute;
-    left: 80%;
-    top: 2%;
-    width: 70px;
-}
-
-.twitter-qrcode-under {
-    position: absolute;
-    font-size: 8px;
-    left: 81%;
-    top: 65px;
-}
-
-.twitter-url {
-    position: absolute;
-    top: 60px;
-    text-decoration: none;
-    color: #4a4a4a;
-}
-
-.hinas-blog-heading {
-    display: flex;
-    margin-bottom: 300px;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    width: 350px;
-    margin-bottom: 400px;
-}
-
-.signboard {
-    position: absolute;
-    width: 350px;
+@media screen and (min-width:700px) and (max-width:5000px) {
 
 
-}
 
-.title1 {
-    position: absolute;
-    color: #4a4a4a;
-    text-align: center;
-    background: linear-gradient(transparent 85%, rgba(0, 255, 242, 0.301) 15%);
-    top: -5px;
-    left: 20px;
+    body {
+        overflow-x: hidden;
+        background-image: url(img/haikei.png);
+        background-color: rgb(231, 255, 244);
+        font-family: "Century Gothic", 'Lato', sans-serif;
 
-}
+    }
 
-.text1 {
-    position: absolute;
-    text-align: center;
-    color: #4a4a4a;
-    font-size: 12px;
-    left: 35px;
-    top: 40px;
-
-}
-
-.hinas-blog-guidance-1 {
-    position: relative;
-    margin-top: 50px;
-    display: flex;
-    width: 350px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.hina1 {
-    position: relative;
-    height: 200px;
-    display: flex;
-    left: -45px;
-    top: -84px;
-}
-
-.speech-bubble1 {
-    position: absolute;
-    width: 80px;
-    display: flex;
-    width: 280px;
-    left: 20%;
-}
-
-.p1 {
-    position: absolute;
-    color: #4a4a4a;
-    z-index: 10px;
-    left: 30%;
-    width: 250px;
-    font-size: 22px;
-    top: -10px;
-}
-
-.hinas-blog-guidance-2 {
-    position: relative;
-    margin-top: 50px;
-    display: flex;
-    width: 350px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.hina2 {
-    position: relative;
-    height: 200px;
-    display: flex;
-    left: 188px;
-    top: -84px;
-    width: 165px;
-}
-
-.speech-bubble2 {
-    position: absolute;
-    width: 80px;
-    display: flex;
-    width: 250px;
-    left: -3%;
-    top: 7px;
-    height: 45px;
-}
-
-.p2 {
-    position: absolute;
-    color: #4a4a4a;
-    z-index: 10px;
-    left: 2%;
-    width: 260px;
-    font-size: 18px;
-    top: 0px;
-}
-
-.profile-title{
-    background: linear-gradient(transparent 75%, rgba(0, 255, 242, 0.301) 15%);
-    width: 110px;
-    color: #4a4a4a;
-    font-size: 20px;
-}
-
-.hinas-blog-profile {
-    position: relative;
-    top: 50px;
-    display: flex;
-    width: 350px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 200px;
-}
-
-.p3 {
-    text-align: center;
-    font-size: 15px;
-    color: #4a4a4a;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.kakko-b1 {
-    position: absolute;
-    width: 50px;
-    left: 0px;
-    top: -25px;
-    transform: rotate(-90deg);
-}
-
-.kakko-b3 {
-    position: absolute;
-    width: 50px;
-    left: 300px;
-    top: -25px;
-    transform: rotate(-90deg);
-}
-
-.kakko-b2 {
-    position: absolute;
-    width: 50px;
-    left: 0px;
-    top: 150px;
-    transform: rotate(90deg);
-}
-
-.kakko-b4 {
-    position: absolute;
-    width: 50px;
-    left: 300px;
-    top: 150px;
-    transform: rotate(90deg);
-}
-
-.hinas-blog-profile2 {
-    position: relative;
-    display: flex;
-    width: 350px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 200px;
-}
-
-.p4 {
-    text-align: center;
-    font-size: 15px;
-    color: #4a4a4a;
-    margin-left: auto;
-    margin-right: auto;
-    top: 5px;
-}
-
-.hinas-blog-guidance-3 {
-
-    position: relative;
-    margin-top: 50px;
-    display: flex;
-    width: 350px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.hina3 {
-    position: relative;
-    height: 200px;
-    display: flex;
-    left: -45px;
-    top: -84px;
-    width: 165px;
-}
-
-.speech-bubble3 {
-    position: absolute;
-    width: 80px;
-    display: flex;
-    width: 280px;
-    left: 20%;
-}
-
-.p5 {
-    position: absolute;
-    color: #4a4a4a;
-    z-index: 50px;
-    left: 41%;
-    width: 260px;
-    font-size: 18px;
-    top: -4px;
-}
-
-.hinas-blog-profile3 {
-    position: relative;
-    display: flex;
-    width: 350px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
-}
-.p6 {
-    text-align: center;
-    font-size: 15px;
-    color: #4a4a4a;
-    margin-left: auto;
-    margin-right: auto;
-    top: 5px;
-    margin-bottom: 100px;
-}
-.kakko-b5 {
-    position: absolute;
-    width: 50px;
-    left: 0px;
-    top: 285px;
-    transform: rotate(90deg);
     
-}
 
-.kakko-b6 {
-    position: absolute;
-    width: 50px;
-    left: 300px;
-    top: 285px;
-    transform: rotate(90deg);
+
+    .element-before {
+        position: relative;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border-style: solid;
+        border-width: 0;
+    }
+
+    .element-style {
+        translate: none;
+        rotate: none;
+        scale: none;
+        transform: translate(0px, 0px);
+        opacity: 1;
+        display: flex;
+    }
+
+    .logo {
+        position: absolute;
+        width: 15vw;
+        top: 12%;
+        left: -4%;
+
+    }
+
+    .name {
+        color: rgb(255, 126, 233);
+        font-family: "Zen Maru Gothic", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 4vw;
+        position: relative;
+        text-align: center;
+        margin-top: 18%;
+        margin-bottom: 0;
+    }
+
+    .name2 {
+        color: rgb(255, 126, 233);
+        font-family: "Zen Maru Gothic", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 2vw;
+        position: relative;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: left;
+        margin-left: 34%;
+
+    }
+
+    .introduction {
+        position: relative;
+
+    }
+
+
+    .int-1 {
+        position: relative;
+        width: 50vw;
+        height: auto;
+        font-size: 1.5vw;
+        margin-top: 7%;
+        line-height: 1.7;
+    }
+
+    .int-2 {
+        position: relative;
+        width: 50vw;
+        font-size: 2.3vw;
+        margin-left: 30%;
+        color: rgb(249, 170, 234);
+        font-family: "Zen Maru Gothic", serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .memo {
+        position: absolute;
+        width: 53vw;
+        height: 40vw;
+        left: -8%;
+        top: -12%;
+        z-index: -2;
+    }
+
+    .header {
+        position: relative;
+        z-index: 2;
+        width: 50%;
+
+    }
+
+    .hina_img {
+        position: relative;
+        width: 50%;
+
+    }
+
+    .slider {
+        /*横幅94%で左右に余白を持たせて中央寄せ*/
+        width: 42vw;
+        margin-left: 4vw;
+
+    }
+
+    .slider img {
+        width: 40vw;
+        /*スライダー内の画像を60vwにしてレスポンシブ化*/
+        height: auto;
+    }
+
+    .slider .slick-slide {
+        transform: scale(0.8);
+        /*左右の画像のサイズを80%に*/
+        transition: all .5s;
+        /*拡大や透過のアニメーションを0.5秒で行う*/
+        opacity: 0.5;
+        /*透過50%*/
+    }
+
+    .slider .slick-slide.slick-center {
+        transform: scale(1);
+        /*中央の画像のサイズだけ等倍に*/
+        opacity: 1;
+        /*透過なし*/
+    }
+
+
+    /*矢印の設定*/
+
+    /*戻る、次へ矢印の位置*/
+    .slick-prev,
+    .slick-next {
+        position: absolute;
+        /*絶対配置にする*/
+        top: 44%;
+        cursor: pointer;
+        /*マウスカーソルを指マークに*/
+        outline: none;
+        /*クリックをしたら出てくる枠線を消す*/
+        border-top: 2px solid #525252;
+        /*矢印の色*/
+        border-right: 2px solid #525252;
+        /*矢印の色*/
+        height: 15px;
+        width: 15px;
+    }
+
+    .slick-prev {
+        /*戻る矢印の位置と形状*/
+        left: -1.5%;
+        transform: rotate(-135deg);
+    }
+
+    .slick-next {
+        position: absolute;
+        /*次へ矢印の位置と形状*/
+        right: 6%;
+        transform: rotate(45deg);
+    }
+
+    /*ドットナビゲーションの設定*/
+
+    .slick-dots {
+        text-align: center;
+        margin: 0vw 0vw 0vw -4vw;
+    }
+
+    .slick-dots li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+    .slick-dots button {
+        color: transparent;
+        outline: none;
+        width: 5px;
+        /*ドットボタンのサイズ*/
+        height: 15px;
+        /*ドットボタンのサイズ*/
+        display: block;
+        border-radius: 50%;
+        background: #9ef4ed00;
+        /*ドットボタンの色*/
+    }
+
+    .slick-dots .slick-active button {
+        background: #56ffcf;
+        /*ドットボタンの現在地表示の色*/
+    }
+
+    .bg {
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        font-weight: 800;
+        font-size: 7vw;
+        line-height: 100%;
+        letter-spacing: .1em;
+        position: absolute;
+        top: 16px;
+        left: 45px;
+        -webkit-transform: rotate(90deg) translateY(-100%);
+        transform: rotate(90deg) translateY(-100%);
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        z-index: -4;
+        color: rgba(133, 252, 229, 0.63);
+        margin-left: 4rem;
+
+    }
+
+    .introduction {
+        font-family: "Noto Sans JP", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 25px;
+        color: #525252;
+    }
+
+    .margin {
+        position: relative;
+        margin-top: 15%;
+    }
+
+    .center-hina-log {
+        position: relative;
+        translate: none;
+        rotate: none;
+        scale: none;
+        transform: translate(0px, 0px);
+        opacity: 1;
+        display: flex;
+    }
+
+    .log-intro {
+        position: relative;
+        width: 50%;
+        color: rgb(247, 187, 237);
+        font-family: "Zen Maru Gothic", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 2.6vw;
+    }
+
+    .log-images {
+        position: relative;
+        z-index: 2;
+        width: 50%;
+        margin-top: 14vw;
+    }
+
+    .frame {
+        position: absolute;
+        width: 41vw;
+        height: 31vw;
+        left: 9%;
+        top: -7%;
+        z-index: 2;
+    }
+
+    /*=== 画像の表示エリア ================================= */
+    .slide {
+        position: relative;
+        overflow: hidden;
+        /* 画像のサイズに合わせて変更ください */
+        width: 37vw;
+        height: 27vw;
+        margin: auto;
+        /* サンプルは中央寄せの背景：白 */
+        background: #ffffff;
+    }
+
+    /*=== 画像の設定 ======================================= */
+    .slide img {
+        display: block;
+        position: absolute;
+        /* 画像のサイズを表示エリアに合せる */
+        width: inherit;
+        height: inherit;
+        opacity: 0;
+        animation: slideAnime 60s ease infinite;
+    }
+
+    /*=== スライドのアニメーションを段差で開始する ========= */
+    .slide img:nth-of-type(1) {
+        animation-delay: 0s
+    }
+
+    .slide img:nth-of-type(2) {
+        animation-delay: 12s
+    }
+
+    .slide img:nth-of-type(3) {
+        animation-delay: 24s
+    }
+
+    .slide img:nth-of-type(4) {
+        animation-delay: 36s
+    }
+
+    .slide img:nth-of-type(5) {
+        animation-delay: 48s
+    }
+
+    /*=== スライドのアニメーション ========================= */
+    @keyframes slideAnime {
+        0% {
+            opacity: 0
+        }
+
+        1% {
+            opacity: 1
+        }
+
+        19% {
+            opacity: 1
+        }
+
+        20% {
+            opacity: 0
+        }
+
+        100% {
+            opacity: 0
+        }
+    }
+
+    /*=== 画像の表示エリア ================================= */
+    .slide-2 {
+        position: relative;
+        overflow: hidden;
+        /* 画像のサイズに合わせて変更ください */
+        width: 50vw;
+        height: 30vw;
+        margin-top: 5vw;
+        margin-left: 6vw;
+        line-height: 2;
+        /* サンプルは中央寄せの背景：白 */
+        background: #ffffff00;
+    }
+
+    /*=== 画像の設定 ======================================= */
+    .slide-2 p {
+        display: block;
+        position: absolute;
+        /* 画像のサイズを表示エリアに合せる */
+        width: inherit;
+        height: inherit;
+        opacity: 0;
+        animation: slideAnime 60s ease infinite;
+    }
+
+    /*=== スライドのアニメーションを段差で開始する ========= */
+    .slide-2 p:nth-of-type(1) {
+        animation-delay: 0s
+    }
+
+    .slide-2 p:nth-of-type(2) {
+        animation-delay: 12s
+    }
+
+    .slide-2 p:nth-of-type(3) {
+        animation-delay: 24s
+    }
+
+    .slide-2 p:nth-of-type(4) {
+        animation-delay: 36s
+    }
+
+    .slide-2 p:nth-of-type(5) {
+        animation-delay: 48s
+    }
+
+    .slide-2 p{
+        color: rgb(35, 35, 35);
+        font-family: "Zen Maru Gothic", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.8vw;
+    }
+
+    .contents {
+        color: rgb(252, 135, 233);
+        font-family: "Zen Maru Gothic", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 2.6vw;
+    }
+
+    .TV-anime{
+        position: relative;
+        font-size: 2vw;
+        color: rgb(234, 158, 255);
+        font-family: "Zen Maru Gothic", serif;
+        font-weight: 700;
+        font-style: normal;
+        
+    }
+
+    .contents-1{
+        position: relative;
+        display: flex;
+    }
+
+    .pastel-life{
+        margin-left: 5vw;
+        width: 27vw;
+    }
+    .frame-1 {
+        position: absolute;
+        width: 29vw;
+        height: 17vw;
+        left: 4%;
+        top: -7%;
+        z-index: 2;
+    }
+
+    .name3{
+        margin-left: 2vw;
+    }
+
+    .contents-1 p{
+        margin-left: 5vw;
+
+    }
+    .contents-1 a{
+        cursor: pointer;
+        text-decoration: none; 
+        color:rgb(234, 158, 255); ;
+    }
+
+    .contents-2{
+        position: relative;
+        margin-top: 9vw;
+        display: flex;
+    }
+    .frame-2 {
+        position: absolute;
+        width: 29.4vw;
+        height: 18vw;
+        left: 4%;
+        top: -6%;
+        z-index: 2;
+    }
+    .contents-2 p{
+        margin-left: 5vw;
+
+    }
+    .contents-2 a{
+        cursor: pointer;
+        text-decoration: none; 
+        color:rgb(234, 158, 255); ;
+    }
+
+    .contents-3{
+        position: relative;
+        margin-top: 9vw;
+        display: flex;
+        margin-bottom: 10vw;
+    }
+    .circle{
+        margin-left: 3vw;
+        width: 32vw;
+        margin-top: 5vw;
+        height: 14vw;
+    }
+    .frame-3 {
+        position: absolute;
+        width: 35.2vw;
+        height: 16vw;
+        left: 1.7vw;
+        top: -6%;
+        z-index: 2;
+        margin-top: 5.5vw;
+    }
+    .contents-3 p{
+        margin-left: 5vw;
+
+    }
+    .contents-3 a{
+        cursor: pointer;
+        text-decoration: none; 
+        color:rgb(234, 158, 255); ;
+    }
+    .contents-4{
+        position: relative;
+        margin-top: 9vw;
+        display: flex;
+        margin-bottom: 10vw;
+    }
+    .frame-4 {
+        position: absolute;
+        width: 29.4vw;
+        height: 17.5vw;
+        left: 4%;
+        top: -6%;
+        z-index: 2;
+    }
+    .contents-4 p{
+        margin-left: 5vw;
+
+    }
+    .contents-4 a{
+        cursor: pointer;
+        text-decoration: none; 
+        color:rgb(234, 158, 255); ;
+    }
     
-}
-.coming-soon{
-    position: relative;
-    text-align: center;
-    font-size: 20px;
-    color: #4a4a4a;
-    margin-bottom: 50px;
-}
-.Revision-matter{
-    background: linear-gradient(transparent 75%, rgba(0, 255, 242, 0.301) 15%);
-    width: 200px;
-    color: #4a4a4a;
-    font-size: 20px;
-}
-.Revision-matter-div{
-    position: relative;
-    width: 350px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.speech-bubble4{
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 0;
-}
-.information{
-    position: absolute;
-    display: flex;
-    font-size: 16px;
-    color: #4a4a4a;
-    z-index: 40;
-    text-align: center;
-    left: 70px;
-    right: auto;
-}
-.please{
-    font-size: 12px;
-    text-align: center;
-    font-size: 19px;
-    margin-top: 50px;
-    margin-left: 0px;
-    background: linear-gradient(transparent 75%, rgba(0, 255, 242, 0.301) 15%);
-    width: 180px;
-}
-.Afterword{
-    position: relative;
-    width: 350px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.cloud{
-    position: absolute;
-    display: flex;
-    width: 354px;
-    height: 177px;
-}
-.hina4{
-    position: absolute;
-    display: flex;
-    height: 182px;
-    right: -15px;
-    top: -10px;
-}
-.caution{
-    position: absolute;
-    color: #4a4a4a;
-    font-size: 11px;
-    text-align: center;
-    top: 30px;
-    left: 40px;
+    
+
+
+
+
+
+
 }
