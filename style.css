@@ -1,531 +1,517 @@
 @charset "utf-8";
 
+.font-size-S {
+    font-size: 1.5vw;
+}
+
+/*画面幅320pxのとき約12px*/
+.font-size-M {
+    font-size: 3vw;
+}
+
+/*画面幅320pxのとき約24px*/
+.font-size-L {
+    font-size: 4.3vw;
+}
+
+.border{
+    border-bottom: 0.4vw solid #0077ff;
+    border-right: 0.4vw solid #0077ff;
+}
+
 @media screen and (min-width:100px) and (max-width:5000px) {
 
-
-
     body {
+        background-color: rgba(65, 255, 255, 0.21);
         overflow-x: hidden;
-        background-image: url(img/haikei.png);
-        background-color: rgb(231, 255, 244);
-        font-family: "Century Gothic", 'Lato', sans-serif;
-
+        margin: 0;
     }
 
-    
 
 
-    .element-before {
+    .titlediv {
         position: relative;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        border-style: solid;
-        border-width: 0;
+        width: 100vw;
     }
 
-    .element-style {
-        translate: none;
-        rotate: none;
-        scale: none;
-        transform: translate(0px, 0px);
-        opacity: 1;
-        display: flex;
+
+    .intersection {
+        position: relative;
+        width: 100vw;
     }
 
-    .logo {
+    .title {
         position: absolute;
-        width: 15vw;
-        top: 12%;
-        left: -4%;
+        top: 23vw;
 
-    }
-
-    .name {
-        color: rgb(255, 126, 233);
-        font-family: "Zen Maru Gothic", serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 4vw;
-        position: relative;
+        width: 100%;
         text-align: center;
-        margin-top: 18%;
-        margin-bottom: 0;
-    }
-
-    .name2 {
-        color: rgb(255, 126, 233);
-        font-family: "Zen Maru Gothic", serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 2vw;
-        position: relative;
-        text-align: center;
-        margin-top: 0;
-        margin-bottom: 0;
-        text-align: left;
-        margin-left: 34%;
-
-    }
-
-    .introduction {
-        position: relative;
-
-    }
-
-
-    .int-1 {
-        position: relative;
-        width: 50vw;
-        height: auto;
-        font-size: 1.5vw;
-        margin-top: 7%;
-        line-height: 1.7;
-    }
-
-    .int-2 {
-        position: relative;
-        width: 50vw;
-        font-size: 2.3vw;
-        margin-left: 30%;
-        color: rgb(249, 170, 234);
-        font-family: "Zen Maru Gothic", serif;
-        font-weight: 700;
-        font-style: normal;
-    }
-
-    .memo {
-        position: absolute;
-        width: 53vw;
-        height: 40vw;
-        left: -8%;
-        top: -12%;
-        z-index: -2;
-    }
-
-    .header {
-        position: relative;
-        z-index: 2;
-        width: 50%;
-
-    }
-
-    .hina_img {
-        position: relative;
-        width: 50%;
-
-    }
-
-    .slider {
-        /*横幅94%で左右に余白を持たせて中央寄せ*/
-        width: 42vw;
-        margin-left: 4vw;
-
-    }
-
-    .slider img {
-        width: 40vw;
-        /*スライダー内の画像を60vwにしてレスポンシブ化*/
-        height: auto;
-    }
-
-    .slider .slick-slide {
-        transform: scale(0.8);
-        /*左右の画像のサイズを80%に*/
-        transition: all .5s;
-        /*拡大や透過のアニメーションを0.5秒で行う*/
-        opacity: 0.5;
-        /*透過50%*/
-    }
-
-    .slider .slick-slide.slick-center {
-        transform: scale(1);
-        /*中央の画像のサイズだけ等倍に*/
-        opacity: 1;
-        /*透過なし*/
-    }
-
-
-    /*矢印の設定*/
-
-    /*戻る、次へ矢印の位置*/
-    .slick-prev,
-    .slick-next {
-        position: absolute;
-        /*絶対配置にする*/
-        top: 44%;
-        cursor: pointer;
-        /*マウスカーソルを指マークに*/
-        outline: none;
-        /*クリックをしたら出てくる枠線を消す*/
-        border-top: 2px solid #525252;
-        /*矢印の色*/
-        border-right: 2px solid #525252;
-        /*矢印の色*/
-        height: 15px;
-        width: 15px;
-    }
-
-    .slick-prev {
-        /*戻る矢印の位置と形状*/
-        left: -1.5%;
-        transform: rotate(-135deg);
-    }
-
-    .slick-next {
-        position: absolute;
-        /*次へ矢印の位置と形状*/
-        right: 6%;
-        transform: rotate(45deg);
-    }
-
-    /*ドットナビゲーションの設定*/
-
-    .slick-dots {
-        text-align: center;
-        margin: 0vw 0vw 0vw -4vw;
-    }
-
-    .slick-dots li {
-        display: inline-block;
-        margin: 0 5px;
-    }
-
-    .slick-dots button {
-        color: transparent;
-        outline: none;
-        width: 5px;
-        /*ドットボタンのサイズ*/
-        height: 15px;
-        /*ドットボタンのサイズ*/
-        display: block;
-        border-radius: 50%;
-        background: #9ef4ed00;
-        /*ドットボタンの色*/
-    }
-
-    .slick-dots .slick-active button {
-        background: #56ffcf;
-        /*ドットボタンの現在地表示の色*/
-    }
-
-    .bg {
-        font-family: "M PLUS Rounded 1c", sans-serif;
-        font-weight: 800;
-        font-size: 7vw;
-        line-height: 100%;
-        letter-spacing: .1em;
-        position: absolute;
-        top: 16px;
-        left: 45px;
-        -webkit-transform: rotate(90deg) translateY(-100%);
-        transform: rotate(90deg) translateY(-100%);
-        -webkit-transform-origin: 0 0;
-        transform-origin: 0 0;
-        z-index: -4;
-        color: rgba(133, 252, 229, 0.63);
-        margin-left: 4rem;
-
-    }
-
-    .introduction {
-        font-family: "Noto Sans JP", sans-serif;
+        font-family: "Murecho", sans-serif;
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
-        font-size: 25px;
-        color: #525252;
-    }
-
-    .margin {
-        position: relative;
-        margin-top: 15%;
-    }
-
-    .center-hina-log {
-        position: relative;
-        translate: none;
-        rotate: none;
-        scale: none;
-        transform: translate(0px, 0px);
-        opacity: 1;
-        display: flex;
-    }
-
-    .log-intro {
-        position: relative;
-        width: 50%;
-        color: rgb(247, 187, 237);
-        font-family: "Zen Maru Gothic", serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 2.6vw;
-    }
-
-    .log-images {
-        position: relative;
-        z-index: 2;
-        width: 50%;
-        margin-top: 14vw;
-    }
-
-    .frame {
-        position: absolute;
-        width: 41vw;
-        height: 31vw;
-        left: 9%;
-        top: -7%;
-        z-index: 2;
-    }
-
-    /*=== 画像の表示エリア ================================= */
-    .slide {
-        position: relative;
-        overflow: hidden;
-        /* 画像のサイズに合わせて変更ください */
-        width: 37vw;
-        height: 27vw;
-        margin: auto;
-        /* サンプルは中央寄せの背景：白 */
-        background: #ffffff;
-    }
-
-    /*=== 画像の設定 ======================================= */
-    .slide img {
-        display: block;
-        position: absolute;
-        /* 画像のサイズを表示エリアに合せる */
-        width: inherit;
-        height: inherit;
-        opacity: 0;
-        animation: slideAnime 60s ease infinite;
-    }
-
-    /*=== スライドのアニメーションを段差で開始する ========= */
-    .slide img:nth-of-type(1) {
-        animation-delay: 0s
-    }
-
-    .slide img:nth-of-type(2) {
-        animation-delay: 12s
-    }
-
-    .slide img:nth-of-type(3) {
-        animation-delay: 24s
-    }
-
-    .slide img:nth-of-type(4) {
-        animation-delay: 36s
-    }
-
-    .slide img:nth-of-type(5) {
-        animation-delay: 48s
-    }
-
-    /*=== スライドのアニメーション ========================= */
-    @keyframes slideAnime {
-        0% {
-            opacity: 0
-        }
-
-        1% {
-            opacity: 1
-        }
-
-        19% {
-            opacity: 1
-        }
-
-        20% {
-            opacity: 0
-        }
-
-        100% {
-            opacity: 0
-        }
-    }
-
-    /*=== 画像の表示エリア ================================= */
-    .slide-2 {
-        position: relative;
-        overflow: hidden;
-        /* 画像のサイズに合わせて変更ください */
-        width: 50vw;
-        height: 30vw;
-        margin-top: 5vw;
-        margin-left: 6vw;
-        line-height: 2;
-        /* サンプルは中央寄せの背景：白 */
-        background: #ffffff00;
-    }
-
-    /*=== 画像の設定 ======================================= */
-    .slide-2 p {
-        display: block;
-        position: absolute;
-        /* 画像のサイズを表示エリアに合せる */
-        width: inherit;
-        height: inherit;
-        opacity: 0;
-        animation: slideAnime 60s ease infinite;
-    }
-
-    /*=== スライドのアニメーションを段差で開始する ========= */
-    .slide-2 p:nth-of-type(1) {
-        animation-delay: 0s
-    }
-
-    .slide-2 p:nth-of-type(2) {
-        animation-delay: 12s
-    }
-
-    .slide-2 p:nth-of-type(3) {
-        animation-delay: 24s
-    }
-
-    .slide-2 p:nth-of-type(4) {
-        animation-delay: 36s
-    }
-
-    .slide-2 p:nth-of-type(5) {
-        animation-delay: 48s
-    }
-
-    .slide-2 p{
-        color: rgb(35, 35, 35);
-        font-family: "Zen Maru Gothic", serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 1.8vw;
-    }
-
-    .contents {
-        color: rgb(252, 135, 233);
-        font-family: "Zen Maru Gothic", serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 2.6vw;
-    }
-
-    .TV-anime{
-        position: relative;
-        font-size: 2vw;
-        color: rgb(234, 158, 255);
-        font-family: "Zen Maru Gothic", serif;
-        font-weight: 700;
-        font-style: normal;
+        background-color: rgba(122, 255, 255, 0.725);
         
     }
 
-    .contents-1{
+
+    /*-----------------CP1---------------*/
+
+    .Chapter1 {
+        position: relative;
+        margin-top: 5vw;
+        width: 100vw;
+        margin-left: 2vw;
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+    }
+    .subtitle1 {
+        position: relative;
+        padding: .3em 0 .2em 1em;
+        border-bottom: 0.4vw solid #0095ff;
+        color: #333333;
+        width: 70vw;
+    }
+    
+    .subtitle1::before {
+        position: absolute;
+        top: 0;
+        left: .3em;
+        transform: rotate(55deg);
+        height: 1.3vw;
+        width: 1.2vw;
+        background: #0095ff;
+        content: '';
+    }
+    
+    .subtitle1::after {
+        position: absolute;
+        transform: rotate(15deg);
+        top: .6em;
+        left: 0;
+        height: 0.9vw;
+        width: 0.9vw;
+        background: #0095ff;
+        content: '';
+    }
+    
+    .sub1_bkg{
+        position: relative;
+        width: 55vw;
+        height: 27vw;
+        background-color: rgba(247, 251, 255, 0.883);
+        border-radius:30px;
+    }
+
+    .sub1 {
+        position: absolute;
+        font-family: "Murecho", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        width: 63vw;
+        margin-left: 2vw;
+        
+    }
+    .flex1{
         position: relative;
         display: flex;
     }
 
-    .pastel-life{
-        margin-left: 5vw;
-        width: 27vw;
-    }
-    .frame-1 {
-        position: absolute;
-        width: 29vw;
-        height: 17vw;
-        left: 4%;
-        top: -7%;
-        z-index: 2;
-    }
-
-    .name3{
+    .ooo{
+        position: relative;
+        width: 35vw;
+        margin-right: 4vw;
+        border-radius:20px;
         margin-left: 2vw;
     }
 
-    .contents-1 p{
-        margin-left: 5vw;
+/*-----------------CP1---------------*/
+/*-----------------CP2---------------*/
 
-    }
-    .contents-1 a{
-        cursor: pointer;
-        text-decoration: none; 
-        color:rgb(234, 158, 255); ;
-    }
-
-    .contents-2{
+    .Chapter2 {
         position: relative;
-        margin-top: 9vw;
-        display: flex;
-    }
-    .frame-2 {
-        position: absolute;
-        width: 29.4vw;
-        height: 18vw;
-        left: 4%;
-        top: -6%;
-        z-index: 2;
-    }
-    .contents-2 p{
-        margin-left: 5vw;
-
-    }
-    .contents-2 a{
-        cursor: pointer;
-        text-decoration: none; 
-        color:rgb(234, 158, 255); ;
-    }
-
-    .contents-3{
-        position: relative;
-        margin-top: 9vw;
-        display: flex;
-        margin-bottom: 10vw;
-    }
-    .circle{
-        margin-left: 3vw;
-        width: 32vw;
         margin-top: 5vw;
-        height: 14vw;
+        width: 100vw;
+        margin-bottom: 10vw;
+        margin-left: 2vw;
     }
-    .frame-3 {
-        position: absolute;
-        width: 35.2vw;
-        height: 16vw;
-        left: 1.7vw;
-        top: -6%;
-        z-index: 2;
-        margin-top: 5.5vw;
-    }
-    .contents-3 p{
-        margin-left: 5vw;
 
-    }
-    .contents-3 a{
-        cursor: pointer;
-        text-decoration: none; 
-        color:rgb(234, 158, 255); ;
-    }
-    .contents-4{
+    .subtitle2 {
         position: relative;
-        margin-top: 9vw;
+        padding: .3em 0 .2em 1em;
+        border-bottom: 0.4vw solid #0095ff;
+        color: #333333;
+        width: 75vw;
+    }
+    
+    .subtitle2::before {
+        position: absolute;
+        top: 0;
+        left: .3em;
+        transform: rotate(55deg);
+        height: 1.3vw;
+        width: 1.2vw;
+        background: #0095ff;
+        content: '';
+    }
+    
+    .subtitle2::after {
+        position: absolute;
+        transform: rotate(15deg);
+        top: .6em;
+        left: 0;
+        height: 0.9vw;
+        width: 0.9vw;
+        background: #0095ff;
+        content: '';
+    }
+
+    .flex2{
+        position: relative;
         display: flex;
+    }
+
+    .trafficlight{
+        position: relative;
+        width: 35vw;
+        margin-right: 4vw;
+        border-radius:20px;
+    }
+
+    .sub2_bkg{
+        position: relative;
+        width: 56vw;
+        height: 32vw;
+        background-color: rgba(247, 251, 255, 0.883);
+        border-radius:30px;
+    }
+
+    .sub2 {
+        position: absolute;
+        font-family: "Murecho", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        width: 63vw;
+        margin-left: 2vw;
+        
+    }
+
+
+
+
+    /*-----------------CP2---------------*/
+    /*-----------------CP3---------------*/
+
+    .Chapter3 {
+        position: relative;
+        margin-top: 5vw;
+        width: 100vw;
+        margin-left: 2vw;
         margin-bottom: 10vw;
     }
-    .frame-4 {
-        position: absolute;
-        width: 29.4vw;
-        height: 17.5vw;
-        left: 4%;
-        top: -6%;
-        z-index: 2;
-    }
-    .contents-4 p{
-        margin-left: 5vw;
 
-    }
-    .contents-4 a{
-        cursor: pointer;
-        text-decoration: none; 
-        color:rgb(234, 158, 255); ;
+    .subtitle3 {
+        position: relative;
+        padding: .3em 0 .2em 1em;
+        border-bottom: 0.4vw solid #0095ff;
+        color: #333333;
+        width:  65vw;
     }
     
+    .subtitle3::before {
+        position: absolute;
+        top: 0;
+        left: .3em;
+        transform: rotate(55deg);
+        height: 1.3vw;
+        width: 1.2vw;
+        background: #0095ff;
+        content: '';
+    }
     
+    .subtitle3::after {
+        position: absolute;
+        transform: rotate(15deg);
+        top: .6em;
+        left: 0;
+        height: 0.9vw;
+        width: 0.9vw;
+        background: #0095ff;
+        content: '';
+    }
+
+    .flex3_1{
+        position: relative;
+        display: flex;
+    }
+    
+    .sub3_bkg{
+        position: relative;
+        width: 58vw;
+        height: 9vw;
+        background-color: rgba(247, 251, 255, 0.883);
+        border-radius:30px;
+    }
+
+    .sub3 {
+        position: absolute;
+        font-family: "Murecho", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        width: 63vw;
+        margin-top: 2vw;
+        margin-left: 2vw;
+        
+    }
+    .if_traffic_light{
+        position: relative;
+        width: 35vw;
+        margin-left: 2vw;
+        border-radius:20px;
+    }
+
+    /*-----------------CP3-1--------------*/
+    /*-----------------CP3-2--------------*/
+
+    .flex3_2{
+        position: relative;
+        display: flex;
+        margin-top: -7vw;
+    }
+
+    .sub3_2_bkg{
+        position: relative;
+        width: 56vw;
+        height: 27vw;
+        background-color: rgba(247, 251, 255, 0.883);
+        border-radius:30px;
+        margin-top: 10vw;
+        margin-left: 3vw;
+    }
+
+    .sub3_2{
+        position: absolute;
+        font-family: "Murecho", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        width: 63vw;
+        margin-top: 2vw;
+        margin-left: 2vw;
+        
+    }
+
+    .train_traffic_light{
+        position: relative;
+        width: 35vw;
+        border-radius:20px;
+    }
+
+
+
+
+    /*-----------------CP3-2--------------*/
+    /*-----------------CP4----------------*/
+
+    .Chapter4{
+        position: relative;
+        margin-top: 5vw;
+        width: 100vw;
+        margin-left: 2vw;
+    }
+
+    .subtitle4 {
+        position: relative;
+        padding: .3em 0 .2em 1em;
+        border-bottom: 0.4vw solid #0095ff;
+        color: #333333;
+        width: 50vw;
+    }
+    
+    .subtitle4::before {
+        position: absolute;
+        top: 0;
+        left: .3em;
+        transform: rotate(55deg);
+        height: 1.3vw;
+        width: 1.2vw;
+        background: #0095ff;
+        content: '';
+    }
+    
+    .subtitle4::after {
+        position: absolute;
+        transform: rotate(15deg);
+        top: .6em;
+        left: 0;
+        height: 0.9vw;
+        width: 0.9vw;
+        background: #0095ff;
+        content: '';
+    }
+
+    .flex4{
+        position: relative;
+        display: flex;
+    }
+    
+    .sub4_bkg{
+        position: relative;
+        width: 58vw;
+        height: 26vw;
+        background-color: rgba(247, 251, 255, 0.883);
+        border-radius:30px;
+        
+    }
+
+    .sub4 {
+        position: absolute;
+        font-family: "Murecho", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        width: 63vw;
+        margin-top: 2vw;
+        margin-left: 2vw;
+        
+    }
+    .future_traffic_light{
+        position: relative;
+        width: 35vw;
+        height: 35vw;
+        margin-left: 2vw;
+        border-radius:20px;
+    }
+
+    /*---------------------cp4-------------------*/
+    /*---------------------cp5-------------------*/
+    .Chapter5{
+        position: relative;
+        margin-top: 5vw;
+        width: 100vw;
+        margin-top: 15vw;
+        margin-left: 2vw;
+        margin-bottom: 10vw;
+    }
+
+    .subtitle5 {
+        position: relative;
+        padding: .3em 0 .2em 1em;
+        border-bottom: 0.4vw solid #0095ff;
+        color: #333333;
+        width: 50vw;
+    }
+    
+    .subtitle5::before {
+        position: absolute;
+        top: 0;
+        left: .3em;
+        transform: rotate(55deg);
+        height: 1.3vw;
+        width: 1.2vw;
+        background: #0095ff;
+        content: '';
+    }
+    
+    .subtitle5::after {
+        position: absolute;
+        transform: rotate(15deg);
+        top: .6em;
+        left: 0;
+        height: 0.9vw;
+        width: 0.9vw;
+        background: #0095ff;
+        content: '';
+    }
+
+    .flex5{
+        position: relative;
+        display: flex;
+    }
+    
+    .sub5_bkg{
+        position: relative;
+        width: 95vw;
+        height: 38vw;
+        background-color: rgba(247, 251, 255, 0.883);
+        border-radius:30px;
+        
+    }
+
+    .sub5 {
+        position: absolute;
+        font-size: 2vw;
+        font-family: "Murecho", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        width: 90vw;
+        margin-top: 2vw;
+        margin-left: 2vw;
+        
+    }
+
+    .box-012 {
+        max-width: 87vw;
+        font-size: 2.5vw;
+        margin: 0 auto;
+        border: 2px solid #e1494eb1;
+        border-radius: 3px;
+        overflow: hidden;
+        margin-bottom: 10vw;
+        margin-top: 5vw;
+        background-color: rgba(247, 251, 255, 0.883);
+    }
+    
+    .box-012 span {
+        padding: .4em .8em;
+        background-color: #e1494eb1;
+        color: #fff;
+    }
+    
+    .box-012 p {
+        margin: 0;
+        padding: 1em 1.5em;
+        color: #333;
+    }
+
+    .box-008 {
+        display: flex;
+        align-items: center;
+        height: 5vw;
+        width: 50vw;
+        grid-gap: 0 .7em;
+        margin: 0 auto;
+        padding: 1vw;
+        border-radius: 2vw;
+        background-color: #ecffe9;
+        margin-left: 0%;
+        
+        color: #333333;
+    }
+    
+    .box-008::before {
+        width: 4vw;
+        height: 2vw;
+        border-bottom: 0.5vw solid #86d67c;
+        border-left: 0.5vw solid #86d67c;
+        transform: rotate(-45deg) translate(2.5px, -2.5px);
+        content: '';
+    }
+    
+    .box-008 p {
+        margin: 0;
+        padding: 0 0 0 .7em;
+        border-left: 1px solid #86d67c;
+    }
+
+
+
+
+
 
 
 
